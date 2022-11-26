@@ -1,0 +1,75 @@
+.texto{
+    color: white;
+    background: orange;
+}
+.green{background: rgb(4, 231, 4);}
+
+/*
+Modelo de Caixa Interno - padding
+e Externo - margin
+*/
+.conteudo{
+    border: 1px solid red;
+    /*padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+        OU  
+    padding: 20px 20px 20px 20px;
+        OU  
+    padding: 20px 5px;   20=top+bottom 5=left+right */
+    padding: 20px;
+    margin: 20px 5px;
+    width: 300px;
+}
+
+/*
+Elementos flutuantes
+*/
+.flutuante{
+    background: blue;
+    border: 3px solid rgb(255, 0, 242);
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+#principal{
+    border: 5px solid red;
+    background: rgb(10, 212, 10);
+}
+.clear{
+    clear: both;
+}
+a {
+    color: #3CCF4E;
+    font-family: "Montserrat", sans-serif;
+}
+.gradient{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;*/
+    background: linear-gradient(45deg, #16213E, #0F3460, #533483, #E94560);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite
+}
+@keyframes colors{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*body{
+    background: linear-gradient(45deg, #16213E, #0F3460, #533483, #E94560);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite
+}*/
